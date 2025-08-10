@@ -18,6 +18,7 @@
     "require": {
         "beberlei/assert": "^3.3",
         "doctrine/orm": "^3.5",
-        "symfony/event-dispatcher": "^7.3"
+        "symfony/event-dispatcher": "^7.3",
+        "symfony/messenger": "^7.3"
     }
 }
