@@ -2,6 +2,8 @@
 
 namespace DDD\Domain\Value;
 
+use Assert\Assertion;
+use Assert\AssertionFailedException;
 use DDD\Domain\ValueObject;
 
 /**
@@ -16,9 +18,11 @@ final class Identity extends ValueObject
 
     /**
      * @param string $id
+     * @throws AssertionFailedException
      */
     private function __construct(string $id)
     {
+        Assertion::notBlank($id);
         $this->id = $id;
     }
 
