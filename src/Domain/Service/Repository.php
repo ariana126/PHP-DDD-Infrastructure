@@ -1,6 +1,6 @@
 <?php
 
-namespace Domain\Service;
+namespace DDD\Domain\Service;
 
 interface Repository extends WriteRepository, ReadRepository
 {

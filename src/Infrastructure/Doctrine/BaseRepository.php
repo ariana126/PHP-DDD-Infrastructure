@@ -6,8 +6,8 @@ use DDD\Domain\Value\Identity;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\EntityRepository;
 use Doctrine\ORM\Mapping\ClassMetadata;
-use Domain\Service\DomainEventDispatcher;
-use Domain\Service\Repository;
+use DDD\Domain\Service\DomainEventDispatcher;
+use DDD\Domain\Service\Repository;
 
 // TODO: Write a test
 class BaseRepository extends EntityRepository implements Repository

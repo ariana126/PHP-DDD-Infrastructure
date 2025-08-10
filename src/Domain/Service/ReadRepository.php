@@ -1,6 +1,6 @@
 <?php
 
-namespace Domain\Service;
+namespace DDD\Domain\Service;
 
 use DDD\Domain\AggregateRoot;
 use DDD\Domain\Error\AggregateRootNotFound;
