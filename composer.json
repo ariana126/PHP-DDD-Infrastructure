@@ -16,6 +16,7 @@
         "phpunit/phpunit": "^12.3"
     },
     "require": {
-        "beberlei/assert": "^3.3"
+        "beberlei/assert": "^3.3",
+        "doctrine/orm": "^3.5"
     }
 }
