@@ -31,7 +31,8 @@ class DomainEventDispatcher implements \DDD\Domain\Service\DomainEventDispatcher
     public function dispatchAggregateRootEvents(AggregateRoot $aggregateRoot): void
     {
         foreach ($aggregateRoot->releaseEvents() as $domainEvent) {
-            $this->bus->dispatch($domainEvent);
+            assert($domainEvent instanceof BaseDomainEvent);
+            $this->bus->dispatch($domainEvent, $domainEvent->name());
         }
     }
 }
